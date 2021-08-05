@@ -31,11 +31,11 @@ export const listData = {
       cards: [
         {
           key: 0,
-          title: 'This Is Going to Hurt',
+          title: 'The Witcher',
         },
         {
           key: 1,
-          title: 'Interpreter of Maladies',
+          title: 'Rich Dad, Poor Dad',
         },
       ],
     },
@@ -46,11 +46,11 @@ export const listData = {
       cards: [
         {
           key: 0,
-          title: 'Harry Potter',
+          title: 'The Terminal',
         },
         {
           key: 1,
-          title: 'Star Wars',
+          title: 'Home Alone',
         },
       ],
     },
@@ -61,11 +61,11 @@ export const listData = {
       cards: [
         {
           key: 0,
-          title: 'The Witcher',
+          title: 'GTA V',
         },
         {
           key: 1,
-          title: 'Skyrim',
+          title: 'Need For Speed',
         },
       ],
     },
