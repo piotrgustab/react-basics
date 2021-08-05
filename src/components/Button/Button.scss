@@ -25,4 +25,12 @@
       background: darken($color-warning, 5%);
     }
   }
+
+  &.transparent {
+    background: transparent;
+
+    &:hover {
+      background: transparentize($color: $color-light, $amount: 0.8);
+    }
+  }
 }

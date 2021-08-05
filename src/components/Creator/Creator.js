@@ -2,14 +2,18 @@ import React from 'react';
 import styles from './Creator.scss';
 import Button from '../Button/Button';
 import PropTypes from 'prop-types';
+import {settings} from '../../data/dataStore';
 
 class Creator extends React.Component {
   static propTypes = {
     text: PropTypes.string,
+    action: PropTypes.func,
+    warning: PropTypes.bool,
   }
 
   static defaultProps = {
     text: 'Add new item',
+    warning: false,
   }
 
   state = {
@@ -21,7 +25,7 @@ class Creator extends React.Component {
     // console.log(event);
     this.setState({
       value: event.target.value,
-      visibleButtons: event.target.value.length > 0
+      visibleButtons: event.target.value.length > 0,
     });
   }
 
@@ -30,16 +34,22 @@ class Creator extends React.Component {
       this.props.action(this.state.value);
       this.setState({
         value: '',
-        visibleButtons: false
+        visibleButtons: false,
       });
     }
   }
 
   handleCancel = () => {
-    this.setState({
-      value: '',
-      visibleButtons: false
-    });
+    let confirm = true;
+    if (this.props.warning && !window.confirm(settings.creator.confirmMess)){
+      confirm = false;
+    }
+    if (confirm){
+      this.setState({
+        value: '',
+        visibleButtons: false,
+      });
+    }
   }
 
   render() {

@@ -1,13 +1,11 @@
 {
   "name": "react-to-do",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production",
-    "lint": "eslint src/",
-    "init-server": "http-server dist"
+    "lint": "eslint src/"
   },
   "husky": {
     "hooks": {
@@ -21,10 +19,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "http-server": "^0.12.3",
     "prop-types": "^15.7.2",
     "react": "^16.7.0",
-    "react-beautiful-dnd": "^13.0.0",
     "react-dom": "^16.7.0",
     "react-html-parser": "^2.0.2",
     "react-redux": "^7.0.1",
@@ -43,7 +39,7 @@
     "eslint-plugin-react": "^7.22.0",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^4.3.8",
-    "lint-staged": "^10.5.4",
+    "lint-staged": "^10.5.3",
     "mini-css-extract-plugin": "^0.5.0",
     "node-sass": "^4.14.1",
     "redux-devtools-extension": "^2.13.8",
@@ -55,5 +51,14 @@
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14",
     "webpack-merge": "^4.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piotrgustab/react-basics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/piotrgustab/react-basics/issues"
+  },
+  "homepage": "https://github.com/piotrgustab/react-basics#readme",
+  "description": ""
 }
