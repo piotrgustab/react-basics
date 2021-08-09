@@ -16,11 +16,6 @@ class List extends React.Component {
     addColumn: PropTypes.func,
   }
 
-  static defaultProps = {
-    description: settings.list.defaultDescription,
-    image: settings.list.defaultImage,
-  }
-
   render() {
     const {title, image, description, columns, addColumn} = this.props;
 

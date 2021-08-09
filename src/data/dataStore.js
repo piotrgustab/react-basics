@@ -112,17 +112,17 @@ const cards = [
   {
     id: 'card-1',
     columnId: 'column-1',
-    title: 'This Is Going to Hurt',
+    title: 'The Witcher',
   },
   {
     id: 'card-2',
     columnId: 'column-1',
-    title: 'Interpreter of Maladies',
+    title: 'Home Alone',
   },
   {
     id: 'card-3',
     columnId: 'column-2',
-    title: 'Harry Potter',
+    title: 'The Terminal',
   },
   {
     id: 'card-4',
@@ -132,12 +132,12 @@ const cards = [
   {
     id: 'card-5',
     columnId: 'column-3',
-    title: 'The Witcher',
+    title: 'GTA V',
   },
   {
     id: 'card-6',
     columnId: 'column-3',
-    title: 'Skyrim',
+    title: 'Need For Speed',
   },
 ];
 
