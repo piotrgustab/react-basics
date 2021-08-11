@@ -1,1 +1,1 @@
-web: npm run init-server
+web: node init-server
