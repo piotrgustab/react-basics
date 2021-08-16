@@ -1,8 +1,8 @@
 import {connect} from 'react-redux';
 import App from './App';
-import {createActionAddList, getListsForApp} from '../../redux/listsRedux';
-import {createActionClearChoice} from '../../redux/chosenListRedux';
-import {createAction_moveCard} from '../../redux/cardsRedux';
+import {createActionAddList, getListsForApp} from '../redux/listsRedux';
+import {createActionClearChoice} from '../redux/chosenListRedux';
+import {createAction_moveCard} from '../redux/cardsRedux';
 
 const mapStateToProps = (state) => ({
   title: state.app.title,
