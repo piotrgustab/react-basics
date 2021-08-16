@@ -1,0 +1,12 @@
+@import '../../styles/settings.scss';
+
+.component {
+  color: $color-dark;
+  width: calc(100%-12px);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  color: $color-light;
+}

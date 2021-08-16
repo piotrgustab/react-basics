@@ -1,14 +1,36 @@
 export const settings = {
   columnCreatorText: 'Add new column',
   cardCreatorText: 'Add new card',
+  listCreatorText: 'Add new list',
   creator: {
     buttonOK: 'OK',
     buttonCancel: 'Cancel',
     defaultText: 'Add new item',
+    confirmMess: 'Are you sure you want to cancel changes?',
+  },
+  list: {
+    defaultImage: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+    defaultDescription: '<p>I can do all the things!!!</p>',
   },
   search: {
     defaultText: 'Search...',
     icon: 'search',
+  },
+  header: {
+    logo: 'check-double',
+  },
+  home: {
+    title: 'Home',
+  },
+  info: {
+    title: 'Info',
+    image: 'https://images.pexels.com/photos/5717479/pexels-photo-5717479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+  },
+  faq: {
+    title: 'FAQ',
+    image: 'https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
@@ -31,11 +53,11 @@ export const listData = {
       cards: [
         {
           key: 0,
-          title: 'The Witcher',
+          title: 'This Is Going to Hurt',
         },
         {
           key: 1,
-          title: 'Rich Dad, Poor Dad',
+          title: 'Interpreter of Maladies',
         },
       ],
     },
@@ -46,11 +68,11 @@ export const listData = {
       cards: [
         {
           key: 0,
-          title: 'The Terminal',
+          title: 'Harry Potter',
         },
         {
           key: 1,
-          title: 'Home Alone',
+          title: 'Star Wars',
         },
       ],
     },
@@ -61,11 +83,11 @@ export const listData = {
       cards: [
         {
           key: 0,
-          title: 'GTA V',
+          title: 'The Witcher',
         },
         {
           key: 1,
-          title: 'Need For Speed',
+          title: 'Skyrim',
         },
       ],
     },
@@ -112,32 +134,38 @@ const cards = [
   {
     id: 'card-1',
     columnId: 'column-1',
-    title: 'The Witcher',
+    title: 'This Is Going to Hurt',
+    index: 0,
   },
   {
     id: 'card-2',
     columnId: 'column-1',
-    title: 'Home Alone',
+    title: 'Interpreter of Maladies',
+    index: 1,
   },
   {
     id: 'card-3',
     columnId: 'column-2',
-    title: 'The Terminal',
+    title: 'Harry Potter',
+    index: 0,
   },
   {
     id: 'card-4',
     columnId: 'column-2',
     title: 'Star Wars',
+    index: 1,
   },
   {
     id: 'card-5',
     columnId: 'column-3',
-    title: 'GTA V',
+    title: 'The Witcher',
+    index: 0,
   },
   {
     id: 'card-6',
     columnId: 'column-3',
-    title: 'Need For Speed',
+    title: 'Skyrim',
+    index: 1,
   },
 ];
 
